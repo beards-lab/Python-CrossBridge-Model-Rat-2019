@@ -196,7 +196,7 @@ SL0 = 2.2 # Initial length of the sarcomere um
 MgATP = 5.0 
 MgADP = 0.0 
 Pi = 0.0 
-# Experimental conditions from Palmer etal J Mol Cell Cardiol. 2013 Apr;57:23-31
+# Experimental conditions from Palmer et al J Mol Cell Cardiol. 2013 Apr;57:23-31
 
 
 init = np.zeros(10)
@@ -283,9 +283,10 @@ plt.plot(F_load/Fmax, -vm)
 #plt.axis('equal')
 plt. figure(2)
 plt.title('Normalized Power Vs Normalized Tension')
-normal_power = data_y * data_x;
+normal_power = data_y * data_x
 plt.plot(F_load/Fmax, (-vm * F_load) / Fmax)
 plt.plot(data_x,normal_power,'ro')
+plt.show()
 
 
 # In[9]:
